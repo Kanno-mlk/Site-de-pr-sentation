@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site défi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div> <!-- Superposition blanche semi-transparente -->
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" onclick="afficherSection('accueil')" class="actif">🏠 Accueil</a></li>
+                <li><a href="#" onclick="afficherSection('comment')">🛠️ Comment j'ai fait</a></li>
+                <li><a href="#" onclick="afficherSection('temps')">⏱️ Combien de temps</a></li>
+                <li><a href="#" onclick="afficherSection('avis')">😊 Est-ce que ça m’a plu</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="accueil" class="section active">
+                <h1>Bonjour, bienvenue sur mon site !</h1>
+                <p>J’ai créé ce site pour relever ton défi et prouver mes capacités en codage web.</p>
+            </section>
+
+            <section id="comment" class="section">
+                <h2>Comment j’ai fait</h2>
+                <p>J’ai utilisé Visual Studio Code, du HTML pour structurer le contenu, du CSS pour le style (vert et blanc), et un peu de JavaScript pour l’interactivité. J’ai appris étape par étape avec de l’aide et de la pratique régulière.</p>
+            </section>
+
+            <section id="temps" class="section">
+                <h2>Combien de temps ça m’a pris</h2>
+                <p>J’ai pris plusieurs jours à comprendre comment ça marchait et à me familiariser avec les outils, mais la création de ce site ne m’a pris que 2 à 3 heures.</p>
+            </section>
+
+            <section id="avis" class="section">
+                <h2>Est-ce que ça m’a plu ?</h2>
+                <p>Oui, vraiment. J’ai aimé voir le site prendre forme. Au début, c’était difficile, mais j’ai trouvé ça motivant. Maintenant, je suis fier d’avoir réussi à le faire fonctionner.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+:root {
+    --bleu-principal: #2196F3; /* Bleu vif et esthétique */
+    --noir: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('image_jpg.jpg'); /* Assure-toi que le fichier s'appelle bien comme ça */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff; /* Texte blanc */
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: var(--noir); /* Fond noir */
+    padding: 20px;
+    border-right: 2px solid #222;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    display: block;
+    background-color: var(--bleu-principal);
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #1976D2;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.section {
+    display: none;
+    background: rgba(0, 0, 0, 0.85); /* Fond légèrement transparent noir */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.section.active {
+    display: block;
+}
+
+.sidebar a.actif {
+    background-color: #1565C0;
+    border-left: 5px solid #0D47A1;
+}
